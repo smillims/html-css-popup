@@ -72,7 +72,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*--------------------*/
+
 /* font-face */
+
 @font-face {
   font-family: "Press Gothic";
   src: url("../fonts/Press Gothic Regular.eot");
@@ -269,6 +271,7 @@ a {
   background-color: rgba(255, 255, 255, 0.7);
   font-family: "Times New Roman";
   letter-spacing: 1px;
+  cursor: pointer;
 }
 
 .more-kottans:focus {
