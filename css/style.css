@@ -1,5 +1,7 @@
 @charset "UTF-8";
+
 /*Обнуление*/
+
 * {
   padding: 0;
   margin: 0;
@@ -82,6 +84,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
   font-style: normal;
 }
+
 html {
   font-size: 15px;
 }
@@ -108,6 +111,7 @@ a {
 * navbar
 *
 */
+
 .navbar {
   float: right;
   padding: 10px;
@@ -120,6 +124,7 @@ a {
 * list
 *
 */
+
 .list {
   display: flex;
   justify-content: space-around;
@@ -156,6 +161,7 @@ a {
 * menu
 *
 */
+
 .menu {
   position: relative;
   padding: 8px;
@@ -225,11 +231,12 @@ a {
 * hidden
 *
 */
-.hidden {
+
+.hidden, .btn {
   display: none;
 }
 
-.hidden:last-of-type {
+.btn {
   background-color: red;
   margin-top: 10px;
   width: 100%;
@@ -245,6 +252,7 @@ a {
 * more
 *
 */
+
 .more-input[type=checkbox]:checked ~ .more-label {
   display: none;
 }
@@ -255,7 +263,8 @@ a {
   transition-timing-function: easy-in-out;
 }
 
-.more-input[type=checkbox]:checked ~ .hidden {
+.more-input[type=checkbox]:checked ~ .hidden,
+.more-input[type=checkbox]:checked ~ .btn {
   display: flex;
   justify-content: center;
 }
@@ -276,4 +285,21 @@ a {
 
 .more-kottans:focus {
   outline: 1px solid #fff;
+}
+
+/*
+*
+*new
+*
+*/
+
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  padding:0 !important;
+  border:0 !important;
+  height: 1px !important; 
+  width: 1px !important; 
+  overflow: hidden;
 }
