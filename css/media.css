@@ -2,15 +2,24 @@
 
 	.menu-inside {
 		right: -85px;
-		width: 270px;
+		width: 300px;
 	}
 
-	.menu-inside__link {
+	.menu-inside__link,
+	.more-list__link {
 		width: 60px;
+	}
+
+	.button {
+		margin-right: 25px;
 	}
 
 	.btn {
 		font-size: 14px;
+	}
+
+	.more-list {
+		margin-left: 25px;
 	}
 
 }
